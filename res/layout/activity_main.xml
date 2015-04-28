@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${packageName}.${activityClass}" 
+    android:background="#ffeeffee"
+    >
+
+<fragment 
+    android:id="@+id/top_frag"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    class="com.example.fragmentcallbackdemo.TopFragment"
+    android:layout_alignParentTop="true"
+    />
+	
+	<TextView 
+	    android:layout_marginTop="80dp"
+	    android:layout_below="@id/top_frag"
+	  android:gravity="center"
+	  android:id="@+id/tv_top"
+	  android:layout_width="match_parent"
+  	  android:layout_height="wrap_content"  
+  	  android:text="Fragment回调机制：Fragment类中不应该有访问其他Fragment和Activity的代码，尽可能使fragment独立！！"
+	    />
+	<TextView 
+	    android:layout_below="@id/tv_top"
+	  android:gravity="center"
+	  android:id="@+id/tv_1"
+	  android:layout_width="match_parent"
+  	  android:layout_height="wrap_content"  
+  	  android:text="本例实现点击底部button，更新顶部textView。"
+	    />
+<fragment 
+    android:id="@+id/bottom_frag"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    class="com.example.fragmentcallbackdemo.BottomFragment"
+    android:layout_alignParentBottom="true"
+    />
+</RelativeLayout>

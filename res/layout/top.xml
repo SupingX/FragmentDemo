@@ -1,0 +1,9 @@
+	
+	<EditText xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:background="#ffddee00"
+	  android:gravity="center"
+	  android:id="@+id/tv_top"
+	  android:layout_width="match_parent"
+  	  android:layout_height="wrap_content"  
+  	  android:text="i want to change!"
+	    />
